@@ -130,7 +130,7 @@
 			
 			/*initfunction*/
 
-		let currentPanorama = '1.jpg';
+		let currentPanorama = '24.jpg';
 		function init() {
 			const container = document.getElementById('container');
 
@@ -155,13 +155,13 @@
 			const geometry = new THREE.SphereGeometry(500, 60, 40);
 			geometry.scale(-1, 1, 1);
 
-			const texture = new THREE.TextureLoader().load('panoramas/1.jpg');
+			const texture = new THREE.TextureLoader().load('panoramas/24.jpg');
 			const material = new THREE.MeshBasicMaterial({ map: texture });
 
 			panoramaMesh = new THREE.Mesh(geometry, material);
 			scene.add(panoramaMesh);
 
-			loadHotspotsFor('1.jpg');
+			loadHotspotsFor('24.jpg');
 
 			window.addEventListener('resize', onWindowResize);
 			renderer.domElement.addEventListener('wheel', onMouseWheel, { passive: false });
@@ -203,260 +203,293 @@
 				/*panoramas*/
 
 			if (panorama === '1.jpg') {
-				addHotspot('images/white.png', new THREE.Vector3(-268.9378027495818, -35.0619873763606, -293.51145467595103), () => {
+				addHotspot('images/white.png', new THREE.Vector3(-268.91156087316637, -20.989393445283874, -294.69141878464353), () => {
 		switchPanorama('2.jpg');
 	});
-	addHotspot('images/white.png', new THREE.Vector3(285.4816063258426, -36.44905740397569, -276.6047764042636), () => {
+	addHotspot('images/white.png', new THREE.Vector3(292.28030963986583, -27.174230398333854, -270.9790751543226), () => {
 		switchPanorama('4.jpg');
 	});
-	addHotspot('images/white.png', new THREE.Vector3(395.1043371540963, -37.804447265838434, -45.53668902580848), () => {
+	addHotspot('images/white.png', new THREE.Vector3(395.24469905813316, -27.63024722794284, -50.287578494110456), () => {
 		switchPanorama('5.jpg');
 	});
-	addHotspot('images/chevronforward.png', new THREE.Vector3(-130.47762468417145, -45.75953202663289, 374.4696230913957), () => {
-		switchPanorama('7.jpg');
+	addHotspot('images/chevronforward.png', new THREE.Vector3(-140.09239626034187, -65.64896660901098, 367.9966848345674), () => {
+		switchPanorama('6.jpg');
 	});
-	addHotspot('images/white.png', new THREE.Vector3(-397.13184224628736, -14.674043053098117, 41.90099507800382), () => {
-		switchPanorama('21.jpg');
-	});
-	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(-397.47786768031995, -22.808857583014213, -27.512793867531748), () => {
-		showMedia(1, 'images/BOBCUSPE.jpg');
+	addHotspot('images/white.png', new THREE.Vector3(-393.612636402808, -29.29487874267655, 59.97483027428344), () => {
+		switchPanorama('10.jpg');
 	});
 }
 
 			if (panorama === '2.jpg') {
-				addHotspot('images/white.png', new THREE.Vector3(329.7242035684509, -40.047669646905916, -221.20832582738274), () => {
+				addHotspot('images/white.png', new THREE.Vector3(338.3021834944255, -34.517740102978564, -209.28534716126063), () => {
 		switchPanorama('1.jpg');
 	});
-	addHotspot('images/white.png', new THREE.Vector3(-231.61540370757677, -44.282837958162226, -322.47097091651256), () => {
+	addHotspot('images/white.png', new THREE.Vector3(-228.21969034502737, -30.684501840705224, -326.54676181437844), () => {
 		switchPanorama('3.jpg');
 	});
-	addHotspot('images/chevronforward.png', new THREE.Vector3(-136.96657714268255, -48.15755372301507, 371.63298086808084), () => {
-		switchPanorama('8.jpg');
+	addHotspot('images/white.png', new THREE.Vector3(386.4263065391932, -23.768488984649544, 96.90094225330496), () => {
+		switchPanorama('10.jpg');
+	});
+	addHotspot('images/chevronforward.png', new THREE.Vector3(-133.48831472300128, -94.23330742219865, 364.40811575685217), () => {
+		switchPanorama('21.jpg');
 	});
 }
 
 			if (panorama === '3.jpg') {
-				addHotspot('images/white.png', new THREE.Vector3(215.48969101839805, -46.092945526699445, 332.55533473651656), () => {
+				addHotspot('images/white.png', new THREE.Vector3(335.89621183414533, -29.08373807142293, -213.81383194798715), () => {
 		switchPanorama('2.jpg');
 	});
-	addHotspot('images/white.png', new THREE.Vector3(258.91035939351764, -44.78646547288982, -300.50043897800236), () => {
+	addHotspot('images/white.png', new THREE.Vector3(-272.1469730701329, -36.83957679430917, -289.923495464579), () => {
 		switchPanorama('4.jpg');
 	});
 }
 
 			if (panorama === '4.jpg') {
-				addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(5.515273921123946, -52.75083880309633, -395.81936522815903), () => {
-		showMedia(1, 'images/OTA.jpg');
-	});
-	addHotspot('images/white.png', new THREE.Vector3(-302.9117994846915, -50.6320729051491, 254.79377698067827), () => {
-		switchPanorama('3.jpg');
-	});
-	addHotspot('images/white.png', new THREE.Vector3(322.01917398488615, -36.414752869257356, 234.1039869832964), () => {
+				addHotspot('images/white.png', new THREE.Vector3(329.6666210231344, -26.261363273651156, 223.59982176746834), () => {
 		switchPanorama('1.jpg');
 	});
-	addHotspot('images/arrowup.png', new THREE.Vector3(-108.4965715947766, -43.93591621481284, 381.45429619534957), () => {
-		switchPanorama('11.jpg');
+	addHotspot('images/white.png', new THREE.Vector3(-295.64914950852955, -44.00529633229218, 265.1773687020537), () => {
+		switchPanorama('3.jpg');
 	});
-	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(141.89127378790855, -95.84236871079463, 360.67230390975504), () => {
-		showMedia(1, 'images/NÍQUELNÁUSEA.jpg');
+	addHotspot('images/arrowup.png', new THREE.Vector3(-111.35533226269561, -48.35624988277118, 380.160833246048), () => {
+		switchPanorama('13.jpg');
+	});
+	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(-3.993757827106199, -54.41609855435509, -395.7244439174393), () => {
+		showMedia(1, 'images/PERSONAGENS_page-0003.jpg');
+	});
+	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(146.55517245628465, -94.64721102344762, 359.2733591152536), () => {
+		showMedia(1, 'images/PERSONAGENS_page-0011.jpg');
 	});
 }
 
 			if (panorama === '5.jpg') {
-				addHotspot('images/chevronforward.png', new THREE.Vector3(-394.73082881401837, -63.094840850503275, 3.656143516192783), () => {
-		switchPanorama('6.jpg');
-	});
-	addHotspot('images/white.png', new THREE.Vector3(391.29750701269376, -33.936465030150714, -72.3068267464568), () => {
+				addHotspot('images/white.png', new THREE.Vector3(391.6109913332269, -29.179569857395077, -72.8535497283475), () => {
 		switchPanorama('1.jpg');
 	});
-	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(350.5400628924192, -60.40439479171899, 181.29017430949136), () => {
-		showMedia(1, 'images/NÍQUELNÁUSEA.jpg');
+	addHotspot('images/chevronforward.png', new THREE.Vector3(-393.5426292214628, -65.61842243622306, -14.764887115787563), () => {
+		switchPanorama('7.jpg');
 	});
 }
 
 			if (panorama === '6.jpg') {
-				addHotspot('images/chevronforward.png', new THREE.Vector3(83.77395406354422, -42.42577814570992, -388.3806127877224), () => {
-		switchPanorama('5.jpg');
+				addHotspot('images/chevronforward.png', new THREE.Vector3(-257.1828473373234, -155.99614023243683, 262.60476484398276), () => {
+		switchPanorama('1.jpg');
 	});
-	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(-303.71017211088133, -51.70262041353126, -253.60198522722698), () => {
-		showMedia(1, 'images/CABEÇAOCA.jpg');
-	});
-	addHotspot('images/white.png', new THREE.Vector3(-371.83093270670247, -38.854736395906656, -139.55728965877535), () => {
+	addHotspot('images/white.png', new THREE.Vector3(139.32302556805132, -38.87790539323926, -371.918321566857), () => {
 		switchPanorama('9.jpg');
 	});
 }
 
 			if (panorama === '7.jpg') {
-				addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(197.18880780837281, -161.4249511423086, 307.16265622409014), () => {
-		showMedia(1, 'images/MENINOMALUQUINHO.jpg');
+				addHotspot('images/chevronforward.png', new THREE.Vector3(390.4196110084801, -71.54520906506863, -44.925938553524915), () => {
+		switchPanorama('5.jpg');
 	});
-	addHotspot('images/chevronforward.png', new THREE.Vector3(-168.44752345992757, -50.57967234801803, -358.3802340773827), () => {
-		switchPanorama('1.jpg');
+	addHotspot('images/white.png', new THREE.Vector3(-214.35215213645563, -26.769734831211824, -335.632102843628), () => {
+		switchPanorama('8.jpg');
 	});
-	addHotspot('images/white.png', new THREE.Vector3(-218.91564708195853, -42.69172290612708, 330.8205084769854), () => {
-		switchPanorama('19.jpg');
+	addHotspot('images/white.png', new THREE.Vector3(-130.42663895535688, -24.640626222074598, 376.6258278924357), () => {
+		switchPanorama('24.jpg');
 	});
-	addHotspot('images/white.png', new THREE.Vector3(395.6641427484567, -29.82216853417776, 47.365469810917915), () => {
-		switchPanorama('9.jpg');
+	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(-2.294818783225647, -140.4172427491989, -373.9918718595617), () => {
+		showMedia(1, 'images/PERSONAGENS_page-0001.jpg');
 	});
 }
 
 			if (panorama === '8.jpg') {
-				addHotspot('images/chevronforward.png', new THREE.Vector3(-259.2304872333136, -61.454622305992054, -297.81283475612616), () => {
-		switchPanorama('2.jpg');
+				addHotspot('images/white.png', new THREE.Vector3(390.450212651358, -32.404180366073724, 79.28816574775757), () => {
+		switchPanorama('7.jpg');
 	});
-	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(184.66345432378617, -68.13660375536105, -347.2772945845471), () => {
-		showMedia(1, 'images/MÔNICA.jpg');
+	addHotspot('images/white.png', new THREE.Vector3(68.0551223217136, -14.622946746916064, -392.86549409721874), () => {
+		switchPanorama('9.jpg');
 	});
-	addHotspot('images/white.png', new THREE.Vector3(147.9839889661177, -60.3168476507067, 365.9332091966433), () => {
-		switchPanorama('10.jpg');
+	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(-286.3701077391098, -126.47373471027959, -248.18306533524634), () => {
+		showMedia(1, 'images/PERSONAGENS_page-0006.jpg');
 	});
 }
 
 			if (panorama === '9.jpg') {
-				addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(-293.07339203793, -132.61018844232657, -236.16570684355202), () => {
-		showMedia(1, 'images/MINOTAURO.jpg');
-	});
-	addHotspot('images/white.png', new THREE.Vector3(387.0916429170418, -43.68628439613278, 87.81659031651135), () => {
+				addHotspot('images/white.png', new THREE.Vector3(-328.6884247168552, -44.38829615032834, 221.84601388867821), () => {
 		switchPanorama('6.jpg');
 	});
-	addHotspot('images/white.png', new THREE.Vector3(66.48019750164207, -32.56933199683897, -392.36856985576844), () => {
-		switchPanorama('7.jpg');
+	addHotspot('images/white.png', new THREE.Vector3(-2.7244168460632596, -22.927177142553326, -398.86233147625205), () => {
+		switchPanorama('8.jpg');
+	});
+	addHotspot('images/chevronforward.png', new THREE.Vector3(254.50023038001703, -39.18925057638913, 304.89995286976017), () => {
+		switchPanorama('25.jpg');
+	});
+	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(200.4497161936377, -220.10670448951748, -266.2005537404583), () => {
+		showMedia(1, 'images/PERSONAGENS_page-0005.jpg');
 	});
 }
 
 			if (panorama === '10.jpg') {
-				addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(177.563221515011, -57.9769752931389, -352.7388094983716), () => {
-		showMedia(1, 'images/CURUPIRA.jpg');
+				addHotspot('images/white.png', new THREE.Vector3(5.531253247637048, -30.9157502684512, 398.4282296289613), () => {
+		switchPanorama('1.jpg');
 	});
-	addHotspot('images/white.png', new THREE.Vector3(-398.081037474445, -34.40859865240104, -4.691750422845324), () => {
-		switchPanorama('8.jpg');
+	addHotspot('images/white.png', new THREE.Vector3(398.07738929295977, -30.088430408642918, 11.785459626503668), () => {
+		switchPanorama('2.jpg');
+	});
+	addHotspot('images/arrowup.png', new THREE.Vector3(-11.71346994747686, -83.44201382807414, -390.132528809885), () => {
+		switchPanorama('11.jpg');
+	});
+	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(218.70582436647345, -63.193154092222514, -328.09040922109523), () => {
+		showMedia(1, 'images/PERSONAGENS_page-0008.jpg');
 	});
 }
 
 			if (panorama === '11.jpg') {
-				addHotspot('images/arrowdown.png', new THREE.Vector3(92.50994780230683, -63.55050716807061, 383.3438038386638), () => {
-		switchPanorama('4.jpg');
+				addHotspot('images/arrowdown.png', new THREE.Vector3(49.474475437891705, -62.121682678674716, 391.57835448972844), () => {
+		switchPanorama('10.jpg');
 	});
-	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(-8.982572384563166, -58.283108597084805, -394.98381804533955), () => {
-		showMedia(1, 'images/DIOMEDES.jpg');
-	});
-	addHotspot('images/arrowup.png', new THREE.Vector3(-70.20944971434628, -42.30461654048234, 390.5694522442931), () => {
+	addHotspot('images/white.png', new THREE.Vector3(-253.01775920923038, -46.99036039899731, -304.8849427623048), () => {
 		switchPanorama('12.jpg');
+	});
+	addHotspot('images/arrowup.png', new THREE.Vector3(-375.9298288680707, -50.896650949348626, -125.13973651740143), () => {
+		switchPanorama('17.jpg');
+	});
+	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(359.94469820918937, -75.78755553869362, -155.5505873247662), () => {
+		showMedia(1, 'images/PERSONAGENS_page-0009.jpg');
 	});
 }
 
 			if (panorama === '12.jpg') {
-				addHotspot('images/arrowdown.png', new THREE.Vector3(-68.0449931201962, -47.06237941795926, -390.3266182235152), () => {
+				addHotspot('images/white.png', new THREE.Vector3(158.99560852831775, -39.333289049784916, 364.41078748805626), () => {
 		switchPanorama('11.jpg');
 	});
-	addHotspot('images/white.png', new THREE.Vector3(274.2633784834174, -33.47449841404553, -288.37909066210364), () => {
-		switchPanorama('13.jpg');
-	});
-	addHotspot('images/chevronforward.png', new THREE.Vector3(354.9491816113957, -42.78909841940116, 177.10825435681124), () => {
-		switchPanorama('14.jpg');
+	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(3.3787164361558335, -55.571172531258114, -395.63252658882254), () => {
+		showMedia(1, 'images/PERSONAGENS_page-0013.jpg');
 	});
 }
 
 			if (panorama === '13.jpg') {
-				addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(202.27093911981393, -45.34109511405553, -341.34593327725656), () => {
-		showMedia(1, 'images/REIDELATA.jpg');
+				addHotspot('images/arrowdown.png', new THREE.Vector3(-61.63312457649659, -57.603093037741345, -390.10630754687605), () => {
+		switchPanorama('4.jpg');
 	});
-	addHotspot('images/white.png', new THREE.Vector3(-270.44819937208985, -29.377308069056717, -292.7229722006807), () => {
-		switchPanorama('12.jpg');
-	});
-	addHotspot('images/chevronforward.png', new THREE.Vector3(-398.5987380765024, -32.035401430469655, 1.300224884182709), () => {
+	addHotspot('images/arrowup.png', new THREE.Vector3(102.73482236648698, -55.655175491868754, -381.5751948114383), () => {
 		switchPanorama('14.jpg');
+	});
+	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(-21.611541281025335, -67.76042516081279, 392.73132753702214), () => {
+		showMedia(1, 'images/PERSONAGENS_page-0004.jpg');
 	});
 }
 
 			if (panorama === '14.jpg') {
-				addHotspot('images/chevronforward.png', new THREE.Vector3(369.7333189786143, -50.80590256091113, 141.03019504802086), () => {
-		switchPanorama('12.jpg');
+				addHotspot('images/arrowdown.png', new THREE.Vector3(-67.92618117741436, -62.94959956179705, -388.4888062282705), () => {
+		switchPanorama('13.jpg');
 	});
-	addHotspot('images/white.png', new THREE.Vector3(249.94197888711213, -26.41242104646303, -310.037835320907), () => {
+	addHotspot('images/white.png', new THREE.Vector3(391.5155487502902, -27.95801951747518, 73.73890999740267), () => {
 		switchPanorama('15.jpg');
 	});
-	addHotspot('images/white.png', new THREE.Vector3(-292.7329736225265, -31.623559049516214, -270.31043702017325), () => {
-		switchPanorama('17.jpg');
-	});
-	addHotspot('images/arrowdown.png', new THREE.Vector3(-73.80580850905432, -68.85649371991444, -386.35982916747525), () => {
-		switchPanorama('18.jpg');
+	addHotspot('images/white.png', new THREE.Vector3(301.39861740921936, -28.118338782432595, -260.605842294661), () => {
+		switchPanorama('16.jpg');
 	});
 }
 
 			if (panorama === '15.jpg') {
-				addHotspot('images/chevronforward.png', new THREE.Vector3(-391.67794464162745, -41.275031598241625, 63.87916379221308), () => {
-		switchPanorama('13.jpg');
-	});
-	addHotspot('images/white.png', new THREE.Vector3(-332.5304059173015, -35.49522588083706, -217.9047214240513), () => {
+				addHotspot('images/white.png', new THREE.Vector3(-316.2748952614388, -21.455211839772904, 242.56281110155555), () => {
 		switchPanorama('14.jpg');
 	});
-	addHotspot('images/white.png', new THREE.Vector3(288.3482811906406, -29.391630409405764, -274.75338420208027), () => {
-		switchPanorama('16.jpg');
+	addHotspot('images/chevronforward.png', new THREE.Vector3(302.08148498657937, -50.88734558612343, 255.7826317424699), () => {
+		switchPanorama('18.jpg');
 	});
 }
 
 			if (panorama === '16.jpg') {
-				addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(-5.14549585172564, -62.54452086716903, -394.75023339322127), () => {
-		showMedia(1, 'images/ROMÃOZINHO.jpg');
+				addHotspot('images/white.png', new THREE.Vector3(265.2098564736563, -17.351571639464225, 298.2226286334543), () => {
+		switchPanorama('14.jpg');
 	});
-	addHotspot('images/white.png', new THREE.Vector3(281.38162651044047, -25.60740203028067, 281.84923541380084), () => {
-		switchPanorama('15.jpg');
-	});
-	addHotspot('images/white.png', new THREE.Vector3(-269.0337327744239, -28.54403913803524, 294.2042142228409), () => {
-		switchPanorama('17.jpg');
+	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(-271.464399914728, -51.256465425715035, 288.15150689707053), () => {
+		showMedia(1, 'images/PERSONAGENS_page-0002.jpg');
 	});
 }
 
 			if (panorama === '17.jpg') {
-				addHotspot('images/white.png', new THREE.Vector3(-336.9197984026224, -35.822802268905804, -211.09291628691338), () => {
-		switchPanorama('16.jpg');
+				addHotspot('images/white.png', new THREE.Vector3(-210.78633042623218, -46.19555707789743, -335.60875702111434), () => {
+		switchPanorama('18.jpg');
 	});
-	addHotspot('images/white.png', new THREE.Vector3(271.76684975924536, -33.48201175635487, -290.9115753638373), () => {
-		switchPanorama('14.jpg');
+	addHotspot('images/white.png', new THREE.Vector3(-207.72522088864218, -47.429621995970926, 337.44365892819997), () => {
+		switchPanorama('20.jpg');
+	});
+	addHotspot('images/arrowdown.png', new THREE.Vector3(-387.3519437768317, -52.88123164255395, 82.88770201810445), () => {
+		switchPanorama('11.jpg');
 	});
 }
 
 			if (panorama === '18.jpg') {
-				addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(-7.283651320681845, -56.936755985710434, -395.2364715316063), () => {
-		showMedia(1, 'images/BIBI.jpg');
+				addHotspot('images/chevronforward.png', new THREE.Vector3(-66.30028738865136, -41.591595896650745, -391.260283012016), () => {
+		switchPanorama('15.jpg');
 	});
-	addHotspot('images/white.png', new THREE.Vector3(166.06759344498363, -37.77396989680021, 361.3512852132384), () => {
-		switchPanorama('21.jpg');
+	addHotspot('images/white.png', new THREE.Vector3(200.20702950688235, -46.28010681919234, -342.58477511826146), () => {
+		switchPanorama('17.jpg');
 	});
-}
-
-			if (panorama === '19.jpg') {
-				addHotspot('images/chevronforward.png', new THREE.Vector3(-384.1715872419469, -66.88630074773715, -86.92839607581386), () => {
-		switchPanorama('20.jpg');
-	});
-	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(392.15193733507533, -50.358864739507595, 54.10505016471277), () => {
-		showMedia(1, 'images/JUQUINHA.jpg');
-	});
-	addHotspot('images/white.png', new THREE.Vector3(216.23976608116305, -32.86394677772888, -334.00701534149295), () => {
-		switchPanorama('7.jpg');
-	});
-}
-
-			if (panorama === '20.jpg') {
-				addHotspot('images/chevronforward.png', new THREE.Vector3(383.2322843076174, -86.24885722015131, -71.36322918631166), () => {
+	addHotspot('images/white.png', new THREE.Vector3(223.83148189801125, -45.06119109351186, 327.31811802856777), () => {
 		switchPanorama('19.jpg');
 	});
 }
 
-			if (panorama === '21.jpg') {
-				addHotspot('images/arrowup.png', new THREE.Vector3(-312.82582076151647, -32.06094001504765, -246.13093060927173), () => {
-		switchPanorama('14.jpg');
-	});
-	addHotspot('images/white.png', new THREE.Vector3(-172.13681216902148, -37.438551089209845, -358.244375647005), () => {
+			if (panorama === '19.jpg') {
+				addHotspot('images/white.png', new THREE.Vector3(337.17581261389194, -46.849646120090696, 208.25694960048105), () => {
 		switchPanorama('18.jpg');
 	});
-	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(271.72677056124394, -53.64467984274074, -287.4954298416622), () => {
-		showMedia(1, 'images/DEUS.jpg');
+	addHotspot('images/white.png', new THREE.Vector3(-333.5333371407337, -47.835315464541004, 213.60941796862448), () => {
+		switchPanorama('20.jpg');
 	});
-	addHotspot('images/white.png', new THREE.Vector3(86.42838641381672, -51.6951621291454, 386.5005005826705), () => {
-		switchPanorama('1.jpg');
+	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(-8.64014865420175, -73.44137118387435, -392.29917506628186), () => {
+		showMedia(1, 'images/PERSONAGENS_page-0010.jpg');
+	});
+}
+
+			if (panorama === '20.jpg') {
+				addHotspot('images/white.png', new THREE.Vector3(-333.89587100328015, -44.76774483002626, -213.71906265001894), () => {
+		switchPanorama('19.jpg');
+	});
+	addHotspot('images/white.png', new THREE.Vector3(333.8595966277544, -40.79507002908102, -214.65394717075384), () => {
+		switchPanorama('17.jpg');
+	});
+}
+
+			if (panorama === '21.jpg') {
+				addHotspot('images/chevronforward.png', new THREE.Vector3(-169.98112789384717, -52.09166522769003, -357.38807578675454), () => {
+		switchPanorama('2.jpg');
+	});
+	addHotspot('images/white.png', new THREE.Vector3(98.64065995483064, -33.83124060015811, 385.37939460197856), () => {
+		switchPanorama('22.jpg');
+	});
+	addHotspot('images/chevronforward.png', new THREE.Vector3(-394.7231103225355, -63.672146226819606, 1.8911126608861601), () => {
+		switchPanorama('23.jpg');
+	});
+	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(212.2166952488974, -69.07823408154985, -330.8497598452236), () => {
+		showMedia(1, 'images/PERSONAGENS_page-0012.jpg');
+	});
+}
+
+			if (panorama === '22.jpg') {
+				addHotspot('images/white.png', new THREE.Vector3(-192.06614884360377, -30.46846079220894, 349.00491973022633), () => {
+		switchPanorama('21.jpg');
+	});
+	addHotspot('images/iconepointdinterrogationquestionjaune.png', new THREE.Vector3(23.19466593180943, -112.1075520037453, -382.24670767701633), () => {
+		showMedia(1, 'images/PERSONAGENS_page-0007.jpg');
+	});
+}
+
+			if (panorama === '23.jpg') {
+				addHotspot('images/chevronforward.png', new THREE.Vector3(291.86247793234406, -5.544814153634989, -272.56537728071953), () => {
+		switchPanorama('21.jpg');
+	});
+}
+
+			if (panorama === '24.jpg') {
+				addHotspot('images/white.png', new THREE.Vector3(-208.878089034293, -36.03273414436944, -338.34221670781767), () => {
+		switchPanorama('7.jpg');
+	});
+	addHotspot('images/chevronforward.png', new THREE.Vector3(77.52176398651861, -43.48567747119077, -389.323642154983), () => {
+		switchPanorama('5.jpg');
+	});
+}
+
+			if (panorama === '25.jpg') {
+				addHotspot('images/chevronforward.png', new THREE.Vector3(388.17251289347837, -83.06378685958224, -44.47215110478946), () => {
+		switchPanorama('9.jpg');
 	});
 }
 
